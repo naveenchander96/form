@@ -1,0 +1,146 @@
+body
+{
+	font-family: 'Roboto', sans-serif;
+	background: url("../images/1.jpeg") no-repeat ;
+	 background-size:cover;
+	 background-attachment: fixed;
+	 height:100vh; 
+	 width:100%;
+	 position:relative;
+	
+}
+
+.op
+{
+	background:black;
+	height:100vh;
+	position:absolute;
+	top:0;
+	width:100%;
+	opacity:0.5;
+}
+h1
+{
+	
+	color: white;
+    position: sticky;
+	font-family:'Ubuntu', sans-serif;
+	font-weight:bold;
+	text-align:center;
+}
+.box
+{
+	
+	
+	background:white;
+	position: sticky;
+	margin-top:3%;
+}
+.box h2
+{
+	  color:#41cb52;
+	  font-weight:300;
+	  font-family: 'Raleway', sans-serif;
+      text-transform: capitalize;
+	  padding-top:3%;
+	  text-align:center;
+}
+hr
+{
+	    border: 1px solid #f5f3f3;;
+        width: 88%;
+}
+ .form-control {
+    border: none;
+    border-bottom: 2px solid #191818;
+    box-shadow: none;
+	outline-width:0!important;
+	box-shadow:none;
+    width:92%;
+	border-radius:0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+	
+
+}
+span.ll {
+    background: white;
+    box-shadow: none;
+    border: none;
+    color: #41cb52;
+	outline: none;	
+    font-size:17px;	
+	padding-top: 21px;
+}
+.pad{
+	padding-right:10px;
+}
+.contain {
+    display: block;
+    position: relative;
+    padding-left: 43px;
+    cursor: pointer;
+	padding-top: 30px;
+}
+
+.contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position:absolute;
+    left:13px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+	    
+}
+
+.contain:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.contain input:checked ~ .checkmark {
+    background-color:#41cb52;
+}
+.checkmark:after {
+    content: "";
+    position:relative;
+    display: none;
+}
+.contain input:checked ~ .checkmark:after {
+    display: block;
+}
+.contain .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.button
+{
+	position: relative;
+    top:15px;
+    padding: 9px 59px; 
+    border: none;
+    color:white;
+    font-weight:700;
+    font-size: 19px;
+	background:#41cb52;
+	outline:none;
+}
+.pad
+{
+	padding-right:28px;
+	padding-bottom:42px;
+}
+.button:hover{
+	background:#3ae374;
+	color:black;
+}	
+}

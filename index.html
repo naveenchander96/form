@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet"type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet"type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
+<body>
+<div class="op">
+</div>
+<div class="container">
+  <h1>STUDENT REGISTRATION FORM</h1>
+ <div class="box col-md-6 col-md-offset-3">
+  <h2>students details</h2>
+  <hr>
+    <form class="pad">
+	<!--first name and last name started-->
+	<div class="row">
+	<div class="col-md-6 col-xs-12">
+      <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="fname" type="text" class="form-control" name="fname" placeholder="First Name" required>
+	  <small id="fname_error" style="color:red"></small>
+	  </div>
+	 </div>
+	<div class="col-md-6 col-xs-12">
+	  <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="lname" type="text" class="form-control" name="lname" placeholder="Last Name">
+	   <small id="lname_error" style="color:red"></small>
+	  </div>  
+	  </div>
+	  </div>
+	  <!--first name and last name ended-->
+	  <!--Dept and year statred-->
+	  <div class="row">
+	<div class="col-md-6 col-xs-12">
+      <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-list"></i></span>
+	     <select  id="dept" name="dept" style="width:100%;border:none;border-bottom:2px solid black;padding:15px; padding-left: 9px;
+    color:#a0a0a0;">
+	     <small id="dept_error"></small>
+	     <option value="value_department">Department</option>
+        <option value="1">Automobile</option>
+        <option>civil</option>
+        <option>Cse</option>
+        <option>Mech</option>
+		<option>Ece</option>
+		<option>EEE</option>
+		
+      </select>
+	  </div>
+	 </div>
+	<div class="col-md-6 col-xs-12">
+	  <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-asterisk"></i></span>
+      <select style="width:100%;border:none;border-bottom:2px solid black;padding:15px; padding-left:9px;
+    color:#a0a0a0;">
+	  <option value="hidden">Year</option>
+        <option value="1">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+	  </div>  
+	  </div>
+	  </div>
+ 
+    <!--Dept and year ended-->
+   <!--mobile number and email started-->
+	  <div class="row">
+	<div class="col-md-6 col-xs-12">
+      <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input id="mobile" type="text" class="form-control" name="mobile" placeholder="Mobile Number">
+	  <small id="mobile_error" style="color:red"></small>
+	  </div>
+	 </div>	
+	<div class="col-md-6 col-xs-12">
+	  <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+	   <small id="email_error" style="color:red"></small>
+	  </div>  
+	  </div>
+	  </div>
+	   <!--mobile number and email ended-->
+	    <!--Password and conform password started-->
+	  <div class="row">
+	<div class="col-md-6 col-xs-12">
+      <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+	  <small id="password_error" style="color:red"></small>
+	  </div>
+	 </div>
+	<div class="col-md-6 col-xs-12">
+	  <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="cpassword" type="password" class="form-control" name="cpassword" placeholder="Conform Password">
+	  <small id="cpassword_error" style="color:red"></small>
+	  </div>  
+	  </div>
+	  </div>
+	  <!--Password and conform password ended-->
+	  <!--gender and date started-->
+	  <div class="row">
+	<div class="col-md-6 col-xs-12">
+      <div class="input-group">
+      <span class="input-group-addon ll"><i class="fa fa-genderless" style="font-size:26px; font-weight:bold; "></i></span>
+	  <select style="width:100%;border:none;border-bottom:2px solid black;padding:15px; 
+    color:#a0a0a0; ">
+	  <option value="hidden">Gender</option>
+        <option value="1">Male</option>
+        <option>Female</option>
+      </select>
+     
+	  </div>
+	 </div>
+	<div class="col-md-6 col-xs-12">
+	  <div class="input-group">
+      <span class="input-group-addon ll"><i class="glyphicon glyphicon-calendar"></i></span>
+      <input id="dob" type="date" class="form-control" name="dob">
+	   <small id="dob_error" style="color:red"></small>
+	  </div>  
+	  </div>
+	  </div>
+	    <!--gender and date ended-->
+	  <div class="row">
+	  <div class="col-md-12">
+
+	  <label class="contain">I Agree to the terms &condition
+       <input type="checkbox">
+        <span class="checkmark"></span>
+           </label>	  
+	  </div>
+	  </div>
+	  <div class="row">
+	  <div class="col-md-12">
+	 <center> <button type="button"class="button" onclick="error_message()">Register</button></center>
+	  </div>
+	  </div>
+	</form>
+</div>
+</div>
+<script>
+var fname = document.getElementById('fname');
+var mobile = document.getElementById('mobile');
+var lname = document.getElementById('lname');
+var email = document.getElementById('email');
+var password = document.getElementById('password');
+var cpassword = document.getElementById('cpassword');
+var dob = document.getElementById('dob');
+ var fname_error = document.getElementById('fname_error');
+ var email_error = document.getElementById('email_error');
+ var mobile_error = document.getElementById('mobile_error');
+ var lname_error = document.getElementById('lname_error');
+  var dept_error = document.getElementById('dept_error');
+  var password_error = document.getElementById('password_error');
+  var cpassword_error = document.getElementById('cpassword_error');
+  var fname_error = document.getElementById('dob');
+ function error_message()
+ {
+  //first name validation
+ if(fname.value.length >= 7)
+ {
+	fname_error.innerHTML = "Value must below 7 charecters";
+ }else{
+ fname_error.innerHTML = "";
+ }
+ //text last name validation
+ if(lname.value.length >= 3)
+ {
+	lname_error.innerHTML = "Value must below 3 charecters";
+ }
+ else{
+ lname_error.innerHTML = "";
+ 
+ }
+ //phone validation
+  if(mobile.value.length <= 12 && mobile.value.length <= 10)
+ {
+
+ mobile_error.innerHTML = "Not a phone number";
+ 
+ 
+	
+ }else{
+ mobile_error.innerHTML = "";
+ 
+ }
+ //email
+ 
+ var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+ if(email.value != "" && reg.test(email.value)==false){
+ email_error.innerHTML = "email invalid";
+ }else{
+ email_error.innerHTML = "";
+ 
+ }
+ 
+ //password
+ if(password.value.length >=10)
+ {
+
+ password_error.innerHTML = "password should contain 10 numbers";
+ 
+ 
+	
+ }else{
+ password_error.innerHTML = "";
+ 
+ }
+ //conform password
+ if(password.value != cpassword.value)
+ {
+ cpassword_error.innerHTML = "password does't match";
+ }else{
+ cpassword_error.innerHTML = "";
+ 
+ }
+ 
+ if(dob.value.length=="")
+ {
+    dob_error.innerHTML="enter the proper date of DOB";
+ }
+ }
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
